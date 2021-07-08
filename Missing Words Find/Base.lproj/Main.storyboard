@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CPu-aL-nRY">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Missing Words Find-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mianbg" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-5F-j7M">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBD-4S-rwb">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvo-Zr-utY">
+                                <rect key="frame" x="173" y="107" width="550" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salad" translatesAutoresizingMaskIntoConstraints="NO" id="bGQ-gS-ucQ">
+                                        <rect key="frame" x="15" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vegetables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ8-Mm-3tw">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6Z-2F-KsM">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bhr-TJ-IZs"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fruit" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-VV-AxD">
+                                        <rect key="frame" x="415" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fruits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfC-eE-a10">
+                                        <rect key="frame" x="400" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-73-Czb">
+                                        <rect key="frame" x="400" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDt-Ic-Myh"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number-blocks" translatesAutoresizingMaskIntoConstraints="NO" id="bfA-3h-5v6">
+                                        <rect key="frame" x="215" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUZ-vX-l5p">
+                                        <rect key="frame" x="200" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-z3-Qts">
+                                        <rect key="frame" x="200" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDe-bj-DWS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iB-n3-0aS">
+                                        <rect key="frame" x="0.0" y="195" width="550" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="550" id="Aqi-s9-qLL"/>
+                                    <constraint firstAttribute="height" constant="200" id="Faf-Lz-iZR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Any One Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnd-ga-Kfn">
+                                <rect key="frame" x="198" y="353" width="500" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Fr-ge-4vN"/>
+                                    <constraint firstAttribute="width" constant="500" id="bRD-cF-EcP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="Rwr-gQ-qzM">
+                                <rect key="frame" x="428" y="312" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IX7-gX-70G"/>
+                                    <constraint firstAttribute="width" constant="40" id="z6M-Bs-BsT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tsC-5F-j7M" secondAttribute="bottom" id="3Sn-pE-e25"/>
+                            <constraint firstItem="qBD-4S-rwb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4vt-jU-SvV"/>
+                            <constraint firstItem="tsC-5F-j7M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S01-N7-KYP"/>
+                            <constraint firstItem="Rwr-gQ-qzM" firstAttribute="top" secondItem="tvo-Zr-utY" secondAttribute="bottom" constant="5" id="TLe-ie-ddV"/>
+                            <constraint firstItem="pnd-ga-Kfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TwS-Aw-d17"/>
+                            <constraint firstItem="tvo-Zr-utY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d2h-EW-xX1"/>
+                            <constraint firstAttribute="trailing" secondItem="tsC-5F-j7M" secondAttribute="trailing" id="jNU-Cz-GX3"/>
+                            <constraint firstItem="pnd-ga-Kfn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kSU-f8-Zoc"/>
+                            <constraint firstAttribute="bottom" secondItem="qBD-4S-rwb" secondAttribute="bottom" id="lvi-wa-UrC"/>
+                            <constraint firstItem="Rwr-gQ-qzM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMc-NG-gfJ"/>
+                            <constraint firstItem="qBD-4S-rwb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pUd-lW-YLt"/>
+                            <constraint firstAttribute="trailing" secondItem="qBD-4S-rwb" secondAttribute="trailing" id="rrU-1t-0ic"/>
+                            <constraint firstItem="tsC-5F-j7M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="x0B-UP-2Y3"/>
+                            <constraint firstItem="tvo-Zr-utY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yGw-Ud-yKz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Missing Words Find" id="HMI-TI-SOb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="PQg-ak-q0g">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnShare:" destination="BYZ-38-t0r" id="51I-8W-wN1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.53571428571428" y="-120.28985507246378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9rV-m5-VTn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CPu-aL-nRY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tYw-dS-0rf">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="V1J-yl-Qa4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iq7-3v-JCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="-119"/>
+        </scene>
+        <!--Select Level-->
+        <scene sceneID="K8Z-Or-AuO">
+            <objects>
+                <viewController storyboardIdentifier="LevelVC" id="8NF-nN-OqE" customClass="LevelVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qz3-SC-PIf">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mianbg" translatesAutoresizingMaskIntoConstraints="NO" id="Ddk-OT-Q6I">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJt-nZ-wbf">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-Xq-IM0">
+                                <rect key="frame" x="173" y="107" width="550" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="salad" translatesAutoresizingMaskIntoConstraints="NO" id="YwZ-4Y-X3F">
+                                        <rect key="frame" x="15" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Easy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-AG-xlo">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oln-gu-tsO">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="8NF-nN-OqE" eventType="touchUpInside" id="Jle-py-Cop"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fruit" translatesAutoresizingMaskIntoConstraints="NO" id="dFC-LO-U7I">
+                                        <rect key="frame" x="415" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mme-OW-TGN">
+                                        <rect key="frame" x="400" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-WV-Cx7">
+                                        <rect key="frame" x="400" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="8NF-nN-OqE" eventType="touchUpInside" id="1pX-9V-vDl"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number-blocks" translatesAutoresizingMaskIntoConstraints="NO" id="FOQ-EE-PAV">
+                                        <rect key="frame" x="215" y="15" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xE-SL-qfY">
+                                        <rect key="frame" x="200" y="150" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbC-0k-2Yw">
+                                        <rect key="frame" x="200" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="8NF-nN-OqE" eventType="touchUpInside" id="prY-Og-aMs"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-Of-1nt">
+                                        <rect key="frame" x="0.0" y="195" width="550" height="5"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="InD-wm-jyI"/>
+                                    <constraint firstAttribute="width" constant="550" id="KXR-rt-DEX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ddk-OT-Q6I" firstAttribute="top" secondItem="cIp-Z7-Wss" secondAttribute="top" id="1EG-Ia-u6P"/>
+                            <constraint firstAttribute="trailing" secondItem="WJt-nZ-wbf" secondAttribute="trailing" id="9ex-De-EYD"/>
+                            <constraint firstAttribute="bottom" secondItem="Ddk-OT-Q6I" secondAttribute="bottom" id="BDG-dT-t6g"/>
+                            <constraint firstItem="WJt-nZ-wbf" firstAttribute="top" secondItem="cIp-Z7-Wss" secondAttribute="top" id="G2w-BL-dOC"/>
+                            <constraint firstItem="ocJ-Xq-IM0" firstAttribute="centerX" secondItem="qz3-SC-PIf" secondAttribute="centerX" id="GFg-UO-D5U"/>
+                            <constraint firstItem="Ddk-OT-Q6I" firstAttribute="leading" secondItem="qz3-SC-PIf" secondAttribute="leading" id="J2u-Uk-tlI"/>
+                            <constraint firstAttribute="bottom" secondItem="WJt-nZ-wbf" secondAttribute="bottom" id="JF4-P1-E9I"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddk-OT-Q6I" secondAttribute="trailing" id="KqR-7d-Boz"/>
+                            <constraint firstItem="ocJ-Xq-IM0" firstAttribute="centerY" secondItem="qz3-SC-PIf" secondAttribute="centerY" id="Yn4-gP-iPy"/>
+                            <constraint firstItem="WJt-nZ-wbf" firstAttribute="leading" secondItem="qz3-SC-PIf" secondAttribute="leading" id="gGM-Nz-1Qv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cIp-Z7-Wss"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Level" id="ONV-z7-XXz">
+                        <barButtonItem key="leftBarButtonItem" image="back (3)" id="QNQ-6Y-QYg">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnBACK:" destination="8NF-nN-OqE" id="lNE-fr-Yfg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="img1" destination="YwZ-4Y-X3F" id="EmM-KU-MH9"/>
+                        <outlet property="img2" destination="FOQ-EE-PAV" id="dWg-oU-4H5"/>
+                        <outlet property="img3" destination="dFC-LO-U7I" id="X0E-ZW-eFk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCU-3h-vtx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="687"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mtE-bf-MoV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YwP-dH-WTf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Il7-CM-1SZ">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8NF-nN-OqE" kind="relationship" relationship="rootViewController" id="5Hp-te-Rer"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65F-dR-PwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="687"/>
+        </scene>
+        <!--Play Quiz-->
+        <scene sceneID="vMG-0R-99Z">
+            <objects>
+                <viewController storyboardIdentifier="PlayVC" id="Ymu-xP-UiH" customClass="PlayVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sa2-Jb-O9h">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mianbg" translatesAutoresizingMaskIntoConstraints="NO" id="gZt-Ey-a2d">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MlO-sW-pjq">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhr-bP-Cje">
+                                <rect key="frame" x="516" y="44" width="350" height="349"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zth-eb-1P0">
+                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="A"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="4ke-vm-B9T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs9-FP-4YL">
+                                        <rect key="frame" x="66" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="F"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="sy4-b3-wNp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za1-zC-KeU">
+                                        <rect key="frame" x="124" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="I"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="0A9-4T-yVs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKd-ho-vsg">
+                                        <rect key="frame" x="182" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="Z"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="7MD-g5-Qhj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-vO-0nL">
+                                        <rect key="frame" x="240" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="E"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="lGg-Oq-bBy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhx-Fn-Ojl">
+                                        <rect key="frame" x="298" y="8" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="K"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="5w5-qb-mjV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJy-CA-ZrA">
+                                        <rect key="frame" x="240" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="N"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="jy4-uk-8v1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTA-hR-92E">
+                                        <rect key="frame" x="298" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="Q"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="276-20-CJV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxF-uy-Z69">
+                                        <rect key="frame" x="240" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="R"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="1fD-RB-v9z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-Fd-gXQ">
+                                        <rect key="frame" x="298" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="L"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="wl8-Sp-lWx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avw-tg-yxE">
+                                        <rect key="frame" x="8" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="H"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="p9c-q0-osF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-zw-Zz3">
+                                        <rect key="frame" x="65" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal">
+                                            <string key="title" base64-UTF8="YES">
+RwM
+</string>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="qKB-j0-F2M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzL-u5-EDg">
+                                        <rect key="frame" x="124" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="B"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="wET-Sy-v8Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEf-Jz-bBM">
+                                        <rect key="frame" x="182" y="78" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="D"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="c0X-Xj-SqE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyb-TR-7vz">
+                                        <rect key="frame" x="8" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="O"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="RdV-pD-1CV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-Ou-TcA">
+                                        <rect key="frame" x="65" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="C"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="dAN-so-XEL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCT-zP-edA">
+                                        <rect key="frame" x="124" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="P"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="F4o-eC-oDo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tax-Pf-FRf">
+                                        <rect key="frame" x="182" y="148" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="M"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="MtZ-iK-vza"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twb-ed-cUL">
+                                        <rect key="frame" x="8" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="Y"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="uLQ-3x-Maz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrA-Vr-TBf">
+                                        <rect key="frame" x="65" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="W"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="7pO-fb-WNN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEX-0r-xwb">
+                                        <rect key="frame" x="8" y="288" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="J"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="HMK-cr-VBk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6e-Xv-7Uk">
+                                        <rect key="frame" x="65" y="288" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="xbn-UT-3U8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-ur-Gcf">
+                                        <rect key="frame" x="124" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="U"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="M0e-4Z-UoR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe8-fv-K1J">
+                                        <rect key="frame" x="182" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="T"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="iBG-un-tGM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ym-B0-qeK">
+                                        <rect key="frame" x="239" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="V"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="r64-Jj-ij6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gl8-zy-Tkb">
+                                        <rect key="frame" x="297" y="218" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="S"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="Ymu-xP-UiH" eventType="touchUpInside" id="WCC-KW-kpt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDz-UZ-xdB">
+                                        <rect key="frame" x="123" y="288" width="224" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="349" id="OjJ-Q8-KnC"/>
+                                    <constraint firstAttribute="width" constant="350" id="a2P-67-mFd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEn-xI-Gtp">
+                                <rect key="frame" x="39" y="44" width="469" height="289"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AKA-Zi-RJi">
+                                        <rect key="frame" x="109.5" y="20" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Z2Y-Tl-v63"/>
+                                            <constraint firstAttribute="width" constant="250" id="d1Q-ef-7Hd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find Missing Word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mat-bM-bCd">
+                                        <rect key="frame" x="0.0" y="274" width="469" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AKA-Zi-RJi" firstAttribute="centerX" secondItem="lEn-xI-Gtp" secondAttribute="centerX" id="2kt-LX-Awi"/>
+                                    <constraint firstItem="AKA-Zi-RJi" firstAttribute="top" secondItem="lEn-xI-Gtp" secondAttribute="top" constant="20" id="AI9-3X-Ivn"/>
+                                    <constraint firstAttribute="height" constant="289" id="Aju-Vn-MGB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTV-j6-bJI">
+                                <rect key="frame" x="39" y="341" width="469" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="U3X-8b-ZDG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gZt-Ey-a2d" firstAttribute="leading" secondItem="Sa2-Jb-O9h" secondAttribute="leading" id="3H9-cA-9dO"/>
+                            <constraint firstItem="gZt-Ey-a2d" firstAttribute="top" secondItem="4cP-PD-Sh9" secondAttribute="top" id="3da-kS-oyH"/>
+                            <constraint firstAttribute="trailing" secondItem="gZt-Ey-a2d" secondAttribute="trailing" id="Be4-zN-JP4"/>
+                            <constraint firstAttribute="bottom" secondItem="MlO-sW-pjq" secondAttribute="bottom" id="EV2-n5-wBL"/>
+                            <constraint firstItem="MlO-sW-pjq" firstAttribute="top" secondItem="4cP-PD-Sh9" secondAttribute="top" id="Gcg-B3-c2w"/>
+                            <constraint firstItem="MlO-sW-pjq" firstAttribute="leading" secondItem="Sa2-Jb-O9h" secondAttribute="leading" id="J0j-Ni-c2x"/>
+                            <constraint firstItem="lEn-xI-Gtp" firstAttribute="top" secondItem="4cP-PD-Sh9" secondAttribute="top" id="LID-bE-hNo"/>
+                            <constraint firstItem="CTV-j6-bJI" firstAttribute="leading" secondItem="Sa2-Jb-O9h" secondAttribute="leading" constant="39" id="NWO-D5-FCD"/>
+                            <constraint firstItem="Lhr-bP-Cje" firstAttribute="leading" secondItem="CTV-j6-bJI" secondAttribute="trailing" constant="8" id="Rzp-fb-p24"/>
+                            <constraint firstAttribute="trailing" secondItem="Lhr-bP-Cje" secondAttribute="trailing" constant="30" id="So3-YG-KjZ"/>
+                            <constraint firstItem="Lhr-bP-Cje" firstAttribute="leading" secondItem="lEn-xI-Gtp" secondAttribute="trailing" constant="8" id="X5k-iM-JZp"/>
+                            <constraint firstItem="Lhr-bP-Cje" firstAttribute="bottom" secondItem="4cP-PD-Sh9" secondAttribute="bottom" id="cCe-ym-QQg"/>
+                            <constraint firstItem="CTV-j6-bJI" firstAttribute="top" secondItem="lEn-xI-Gtp" secondAttribute="bottom" constant="8" symbolic="YES" id="hHb-ue-aGD"/>
+                            <constraint firstAttribute="trailing" secondItem="MlO-sW-pjq" secondAttribute="trailing" id="hRt-d3-nhc"/>
+                            <constraint firstItem="Lhr-bP-Cje" firstAttribute="top" secondItem="4cP-PD-Sh9" secondAttribute="top" id="odh-f1-0tx"/>
+                            <constraint firstAttribute="bottom" secondItem="gZt-Ey-a2d" secondAttribute="bottom" id="usq-tg-IKn"/>
+                            <constraint firstItem="lEn-xI-Gtp" firstAttribute="leading" secondItem="Sa2-Jb-O9h" secondAttribute="leading" constant="39" id="va0-Eq-6XQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4cP-PD-Sh9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Play Quiz" id="scP-9e-Tgq">
+                        <barButtonItem key="leftBarButtonItem" id="Mk7-15-m4h">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="img" destination="AKA-Zi-RJi" id="RbO-n2-YzO"/>
+                        <outlet property="lblName" destination="CTV-j6-bJI" id="eC5-eN-B2J"/>
+                        <outlet property="lblTimer" destination="vDz-UZ-xdB" id="j0U-BI-QIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVh-3e-2Wc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.53571428571428" y="1521.7391304347827"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hYM-9a-yVV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wsb-mx-Jrb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2qr-Iy-8nX">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ymu-xP-UiH" kind="relationship" relationship="rootViewController" id="cDx-TP-RLm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hm8-vh-sIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="1523"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="iLa-7w-5hn">
+            <objects>
+                <viewController storyboardIdentifier="resultView" id="GPr-JP-ipb" customClass="resultView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFy-9C-5nd">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mianbg" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-sA-UJa">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WPo-Xc-elh">
+                                <rect key="frame" x="0.0" y="44" width="896" height="370"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SCORE :-  50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4g-1C-q5o">
+                                <rect key="frame" x="198" y="269" width="500" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8tK-ok-fYg"/>
+                                    <constraint firstAttribute="width" constant="500" id="att-MH-SPq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="4mb-gQ-XcU">
+                                <rect key="frame" x="373" y="64" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="thy-CG-9Vb"/>
+                                    <constraint firstAttribute="width" constant="150" id="vax-Ie-K81"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBD-rP-wuU">
+                                <rect key="frame" x="207" y="327" width="482" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cZj-si-ogU"/>
+                                    <constraint firstAttribute="width" constant="482" id="nas-XL-0lE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                <state key="normal" title="Go To Home Page">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn1GOHome:" destination="GPr-JP-ipb" eventType="touchUpInside" id="p0a-RU-Zjd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gV7-sA-UJa" firstAttribute="leading" secondItem="CFy-9C-5nd" secondAttribute="leading" id="41o-hA-vmk"/>
+                            <constraint firstItem="4mb-gQ-XcU" firstAttribute="top" secondItem="w0c-vB-YlU" secondAttribute="top" constant="20" id="8T2-Wi-a6E"/>
+                            <constraint firstAttribute="bottom" secondItem="gV7-sA-UJa" secondAttribute="bottom" id="9qr-jg-gaq"/>
+                            <constraint firstItem="L4g-1C-q5o" firstAttribute="top" secondItem="4mb-gQ-XcU" secondAttribute="bottom" constant="55" id="BtA-g4-j3O"/>
+                            <constraint firstItem="OBD-rP-wuU" firstAttribute="centerX" secondItem="CFy-9C-5nd" secondAttribute="centerX" id="Dqb-Q3-BsC"/>
+                            <constraint firstItem="L4g-1C-q5o" firstAttribute="centerX" secondItem="CFy-9C-5nd" secondAttribute="centerX" id="FAX-cu-bT3"/>
+                            <constraint firstItem="gV7-sA-UJa" firstAttribute="top" secondItem="w0c-vB-YlU" secondAttribute="top" id="GTu-vp-7xk"/>
+                            <constraint firstAttribute="bottom" secondItem="WPo-Xc-elh" secondAttribute="bottom" id="Jod-NU-KGo"/>
+                            <constraint firstItem="WPo-Xc-elh" firstAttribute="leading" secondItem="CFy-9C-5nd" secondAttribute="leading" id="K1c-Sp-SWG"/>
+                            <constraint firstItem="WPo-Xc-elh" firstAttribute="top" secondItem="w0c-vB-YlU" secondAttribute="top" id="Np1-UX-EJP"/>
+                            <constraint firstItem="4mb-gQ-XcU" firstAttribute="centerX" secondItem="CFy-9C-5nd" secondAttribute="centerX" id="Yj7-Et-LXh"/>
+                            <constraint firstAttribute="trailing" secondItem="WPo-Xc-elh" secondAttribute="trailing" id="i3J-hr-mNU"/>
+                            <constraint firstAttribute="trailing" secondItem="gV7-sA-UJa" secondAttribute="trailing" id="laj-mq-ua9"/>
+                            <constraint firstItem="OBD-rP-wuU" firstAttribute="top" secondItem="L4g-1C-q5o" secondAttribute="bottom" constant="8" id="x7X-ek-ZiO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w0c-vB-YlU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="OEz-Ef-Vpj">
+                        <barButtonItem key="leftBarButtonItem" id="kpR-vJ-oW7">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="LyH-JC-ude">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnGOHome:" destination="GPr-JP-ipb" id="W35-6o-3Hj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblName" destination="L4g-1C-q5o" id="kCa-ZY-nDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uia-iJ-ZCG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270.53571428571428" y="2295.6521739130435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Fi-G4-clg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cM-u0-ZRk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Yp-JX-ZTk">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GPr-JP-ipb" kind="relationship" relationship="rootViewController" id="FER-uB-Nw8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXp-EX-d56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-356" y="2297"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back (3)" width="25" height="25"/>
+        <image name="download" width="64" height="64"/>
+        <image name="fruit" width="64" height="64"/>
+        <image name="mianbg" width="640" height="318"/>
+        <image name="number-blocks" width="64" height="64"/>
+        <image name="result" width="64" height="64"/>
+        <image name="salad" width="64" height="64"/>
+    </resources>
+</document>
